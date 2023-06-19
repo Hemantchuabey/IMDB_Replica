@@ -27,7 +27,19 @@ function App() {
     };
     getAllMovies();
   }, [sort, filterGenre, page, search]);
-  return <div>Hello world!!</div>;
+  return (
+    <div className="wrapper">
+      <div className="container">
+        <div className="head">
+          <img src="./Image/logo.png" alt="logo" className="logo" />
+        </div>
+        <div className="body">
+          <div className="table-container"></div>
+          <div className="filter-container"></div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
