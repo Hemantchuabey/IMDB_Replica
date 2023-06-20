@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Search from "./component/search";
+import Table from "./component/table";
 
 const base_url = process.env.React_APP_API_URL;
 
@@ -36,7 +37,9 @@ function App() {
           <Search setSearch={(search) => setSearch(search)} />
         </div>
         <div className="body">
-          <div className="table-container"></div>
+          <div className="table-container">
+            <Table movies={obj.movies ? obj.movies : []} />
+          </div>
           <div className="filter-container"></div>
         </div>
       </div>
