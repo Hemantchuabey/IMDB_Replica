@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import Search from "./component/search";
 import Table from "./component/table";
+import Pagination from "./component/pagination";
 
 const base_url = process.env.React_APP_API_URL;
 
@@ -39,6 +40,12 @@ function App() {
         <div className="body">
           <div className="table-container">
             <Table movies={obj.movies ? obj.movies : []} />
+            <Pagination
+              page={page}
+              limit={obj.limit ? obj.limit : 0}
+              total={obj.total ? obj.total : 0}
+              setPage={(page) => setPage(page)}
+            />
           </div>
           <div className="filter-container"></div>
         </div>

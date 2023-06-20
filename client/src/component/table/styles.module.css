@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  text-align: center;
   font-size: 18px;
   font-weight: bold;
+  height: 60px;
+  text-align: center;
   box-shadow: var(--box-shadow);
   margin: 10px;
   background-color: white;
@@ -13,14 +13,13 @@
 }
 
 .title_tab {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--black);
   flex: 2;
   text-align: left;
   margin-left: 20px;
 }
-
 .genre_tab {
   font-size: 16px;
   font-weight: 600;
@@ -42,7 +41,7 @@
   margin: 5px 10px;
   box-shadow: var(--box-shadow);
   cursor: pointer;
-  transition: all 0.1s ease;
+  transform: all 0.1s ease;
   background-color: white;
   border-radius: 4px;
 }

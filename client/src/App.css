@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .container {
-  width: 1000px;
+  width: 70%;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   display: flex;
@@ -33,7 +33,9 @@
 }
 
 .table-container {
-  flex: 3;
+  flex: 18;
+  margin: 5px auto;
+  align-self: center;
 }
 .filter-container {
   flex: 1;
