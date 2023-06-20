@@ -4,6 +4,7 @@ import "./App.css";
 import Search from "./component/search";
 import Table from "./component/table";
 import Pagination from "./component/pagination";
+import Sort from "./component/sort";
 
 const base_url = process.env.React_APP_API_URL;
 
@@ -12,7 +13,7 @@ function App() {
   const [filterGenre, setFilterGenre] = useState([]);
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [sort, SetSort] = useState({ sort: "rating", order: "desc" });
+  const [sort, setSort] = useState({ sort: "rating", order: "desc" });
 
   useEffect(() => {
     const getAllMovies = async () => {
@@ -47,7 +48,9 @@ function App() {
               setPage={(page) => setPage(page)}
             />
           </div>
-          <div className="filter-container"></div>
+          <div className="filter-container">
+            <Sort sort={sort} setSort={(sort) => setSort(sort)} />
+          </div>
         </div>
       </div>
     </div>

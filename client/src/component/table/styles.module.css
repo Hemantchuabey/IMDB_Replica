@@ -16,11 +16,17 @@
   font-size: 18px;
   font-weight: 600;
   color: var(--black);
-  flex: 2;
+  flex: 1;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 .genre_tab {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  flex: 1;
+}
+.year_tab {
   font-size: 16px;
   font-weight: 600;
   color: var(--black);
@@ -38,7 +44,7 @@
   display: flex;
   align-items: center;
   height: 70px;
-  margin: 5px 10px;
+  margin: 5px 5px;
   box-shadow: var(--box-shadow);
   cursor: pointer;
   transform: all 0.1s ease;
@@ -51,7 +57,7 @@
 }
 
 .title_container {
-  flex: 2;
+  flex: 1;
   display: flex;
   align-items: center;
   object-fit: contain;
@@ -67,6 +73,19 @@
 .movie_title {
   font-size: 16px;
   font-weight: 500;
+}
+
+/* year */
+.year_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie_year {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .genre_container {

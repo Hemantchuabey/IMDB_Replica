@@ -5,6 +5,7 @@ const Table = ({movies}) => {
             <div className={styles.container}>
                 <div className={styles.heading}>
                     <p className={styles.title_tab}>Title</p>
+                    <p className={styles.year_tab}>Year</p>
                     <p className={styles.genre_tab}>Genre</p>
                     <p className={styles.rating_tab}>Rating</p>
                 </div>
@@ -12,9 +13,13 @@ const Table = ({movies}) => {
                     <div className={styles.movie} key={movie.id}>
                         <div className={styles.title_container}>
                         <img src={movie.image} alt="movie" className={styles.movie_img} />
-                            <p className={styles.movie_title}>{movie.name}{movie.year}</p>
+                            <p className={styles.movie_title}>{movie.name}</p>
                         </div>
                  
+                        <div className={styles.year_container}>
+                            <p className={styles.movie_year}>{movie.year}</p>
+                        </div>
+
                         <div className={styles.gerne_container}>
                             {movie.genre.map((gerne,index) => (
                                 <p className={styles.movie_genre} key={gerne}>
